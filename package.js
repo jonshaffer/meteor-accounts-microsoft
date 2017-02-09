@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jonshaffer:accounts-microsoft',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'A login service for Microsoft accounts.',
   git: 'https://github.com/jonshaffer/meteor-accounts-microsoft',
   documentation: 'README.md'
@@ -16,16 +16,7 @@ Package.onUse(function(api) {
   api.use('accounts-oauth', ['client', 'server']);
   api.use('jonshaffer:microsoft@1.0.1', ['client', 'server']);
 
-  api.addFiles(['client/login.js', 'client/login_button.css'], 'client');
-  api.addFiles('lib/register.js');
-  api.addFiles('server/autopublish.js', 'server');
-});
+  api.addFiles('microsoft_login_button.css', 'client');
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('ecmascript');
-  api.use('jonshaffer:accounts-microsoft');
-
-  // Tests will follow soon!
-  api.addFiles([]);
+  api.addFiles('microsoft.js');
 });
