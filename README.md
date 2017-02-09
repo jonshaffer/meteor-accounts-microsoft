@@ -7,7 +7,7 @@ __A login service for Microsoft accounts__
 
 Add the package to meteor
 ```javascript
-meteor add q42:accounts-microsoft
+meteor add jonshaffer:accounts-microsoft
 ```
 
 ## Basic usage
@@ -47,7 +47,7 @@ var options = {
     loginUrlParameters: [], 
     loginStyle: "popup" or "redirect",
     redirectUrl: ""
-}
+} 
 ```
 
 ## References
@@ -56,7 +56,7 @@ var options = {
 
 ### OAuth package
 
-* [q42:microsoft](https://github.com/Q42/meteor-microsoft)
+* [jonshaffer:microsoft](https://github.com/jonshaffer/meteor-microsoft)
 
 ### Microsoft REST documentation
 
@@ -65,5 +65,5 @@ var options = {
 * [Getting user data](https://msdn.microsoft.com/en-us/library/office/dn659736.aspx)
 
 
-[travis-url]: https://travis-ci.org/Q42/meteor-accounts-microsoft
-[travis-image]: http://img.shields.io/travis/Q42/meteor-accounts-microsoft.svg
+[travis-url]: https://travis-ci.org/jonshaffer/meteor-accounts-microsoft
+[travis-image]: http://img.shields.io/travis/jonshaffer/meteor-accounts-microsoft.svg
