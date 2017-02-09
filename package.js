@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'accounts-microsoft',
+  name: 'jonshaffer:accounts-microsoft',
   version: '1.0.0',
   summary: 'A login service for Microsoft accounts.',
-  git: 'https://github.com/Q42/meteor-accounts-microsoft',
+  git: 'https://github.com/jonshaffer/meteor-accounts-microsoft',
   documentation: 'README.md'
 });
 
@@ -24,7 +24,7 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('ecmascript');
-  api.use('accounts-microsoft');
+  api.use('jonshaffer:accounts-microsoft');
 
   // Tests will follow soon!
   api.addFiles([]);
